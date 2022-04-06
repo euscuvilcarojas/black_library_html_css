@@ -1,0 +1,973 @@
+/******s**********
+    
+    Final project
+    Name: Eduardo Uscuvilca
+    Date: 06-25-2020
+    Description: Final project
+
+*****************/
+
+html,body, p,footer,article,aside{
+	margin: auto;
+    padding: 0;
+}
+
+html{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: grey;
+    width: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 95%;
+    background-color:whitesmoke;
+    border: 1px solid black;
+    border-radius:4px;
+    box-shadow: 1px 1px 1px #333, -1px 1px 1px #333;
+}
+
+header, content, footer{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#blackLibraryHeader{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9px;
+    flex-wrap: nowrap;
+    height: 85px;
+    margin-top: 4px;
+    background-color: #000000;
+}
+
+#imgDiv{
+    display: flex;
+    flex:  8;
+    align-items: center; 
+    justify-content: left;
+}
+
+#navDiv{
+    position: relative;
+    display: flex;
+    flex: 0.15;
+    justify-content: center;
+    align-items: flex-end;
+    vertical-align: center;
+}
+
+#ulTopNav{
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#ulTopNav li{
+    padding-bottom: 5px;
+
+}
+
+#ulTopNav li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: whitesmoke;
+}
+
+#formDiv{
+    display: flex;
+    flex: 3;
+    align-items: center; 
+    justify-content: center;
+}
+
+#formDiv form button{
+    font-weight: bolder;
+}
+
+#headerLogoImg{
+    height: 100%;
+    width: 100%;
+    padding: 0px auto
+}
+
+#headerNav{
+    display: flex;
+    width: 100%;
+    align-items: center; 
+    justify-content: center;
+}
+
+#headerNav ul{
+    display: block;
+    justify-content: flex-end;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+}
+
+#headerNav ul a{
+    text-decoration: none;
+}
+
+#headerNav ul li{
+    color: #475571;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/*FormDiv elements*/
+#search{
+    width: 80px;
+    font-size: 8px;
+}
+
+#searchbtn{
+    font-size: 8px;
+}
+
+/*Image HeaderDiv*/
+
+#imageHeader{
+    display: flex;
+}
+
+#imageHeaderDiv{
+    position: relative;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px; 
+    height: 300px;
+    border: 2px solid black;
+}
+
+#imageHeaderDiv img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#imageHeaderDiv h1{
+    position: absolute;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 8px;
+    left: 16px;
+    color: #FFF;
+}
+
+#imageHeaderDiv h6{
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    bottom: 8px;
+    right: 16px;
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#mainNavDiv{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: white;
+}
+
+#mainNavDiv nav{
+    display: flex;
+    width: 100%;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#mainNavDiv ul{ 
+    padding-left: 0px;
+    display: flex;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+#mainNavDiv ul li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#mainNavDiv ul li a{
+    font-family: sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+
+#mainNavDiv nav ul li:last-child{
+    border-right: none;
+}
+
+#mainContent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#leftSideContent{
+    flex: 1.5;
+}
+
+#leftTopSideDiv{
+    padding-bottom: 50px;
+
+}
+
+#leftTopSideDiv nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+#leftTopSideDiv nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#leftTopSideDiv nav ul li{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    font-weight: bolder;
+    font-size: 8px;
+    list-style: none;
+    background: rgb(166,166,166);
+    background: linear-gradient(0deg, rgba(166,166,166,1) 0%, rgba(238,238,238,1) 77%);
+}
+
+#leftBotSideDiv{
+    padding-top: 15px;
+    display: flex;
+    border-top: 2px solid navy;
+}
+
+#leftBotSideDiv p{
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: navy;
+    font-size: 10px;
+}
+
+#leftBotSideDiv img{
+    width: 80px;
+    height: 50px;
+    float: right;
+}
+
+#rightSideContent{
+    flex: 6;
+    margin: 0;
+    padding: 0;
+}
+
+/*Footer content*/
+
+
+footer{
+    display: block;
+    width: 80%;
+}
+
+#footerContent{
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#firstFooterContent{
+    display: flex;
+    flex: 6;
+}
+
+#firstFooterContent div{
+    flex: 3;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#firstFooterContent h1{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#firstFooterContentAvailable{
+    text-align: center;
+}
+
+
+#secondFooterContent{
+    margin-top: 40px;
+    flex: 4;
+}
+
+#secondFooterContent ul{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    height: 8px;
+    display: flex;
+    list-style: none;
+    justify-content:center;
+    align-items: center;
+    font-size: 8px;
+    margin-bottom: 25px;
+}
+
+#topFooterContent{
+    flex: 1;
+    margin-top: 20px;
+}
+
+/*Top Footer*/
+#topFooterContent ul {
+    display: flex;
+    justify-content:center;
+    font-family: sans-serif;
+    font-size: 20px;
+    list-style: none;
+    width: 100%;
+}
+
+#topFooterList li{
+    padding-left: 18px;
+    padding-right: 18px;
+    text-align: center;
+    border-right: 2px solid #000080;
+    font-size: 13px;
+}
+
+#topFooterList li:last-child{
+    border-right: none;
+}
+
+#topFooterList a {
+    text-decoration: none;
+}
+
+#lastFooterList ul{
+    display: flex;
+    justify-content:center;
+    font-family: sans-serif;
+    font-size: 20px;
+    list-style: none;
+    width: 100%;
+}
+
+#lastFooterList li{
+    padding-left: 18px;
+    padding-right: 18px;
+    text-align: center;
+    border-right: 2px solid #000080;
+    font-size: 8px;
+}
+
+#lastFooterList li:last-child{
+    border-right: none;
+}
+
+#lastFooterList a {
+    text-decoration: none;
+    color: black;
+}
+
+#middleFooterList a {
+    text-decoration: none;
+}
+
+#botFooterList a {
+    text-decoration: none;
+}
+
+#middleFooterList li{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#middleFooterList li p{
+    font-weight: bolder;
+}
+
+#middleFooterList li a{
+    font-weight: normal;
+}
+
+#botFooterList li{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#botFooterList li h6{
+    padding-right: 10px;
+    border-right: 2px solid #000080;
+}
+
+#botFooterList li:last-child{
+    border-right:none;
+}
+
+#rightSideContent{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#topRightSideContent{
+    position: relative;
+    align-items: center; 
+    justify-content: left;
+    width: 100%;
+}
+
+#topRightSideContent img{
+    height: 90%;
+    width: 100%;
+}
+
+#topRightSideContent ul{
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+    padding-left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#topRightSideContent ul li{
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    justify-content: flex-start;
+}
+
+#topRightSideContent ul li a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#topRightSideContent h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-bottom: 2px solid navy;
+}
+
+#rightSideContent div h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+#rightSideContent div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    justify-content: space-around;
+}
+
+#rightSideContent div p a{
+    color:navy;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#twoColumnsDiv{
+    padding-top: 30px;
+    display: flex;
+    height: auto;
+}
+
+#leftTwoColumnsDiv{
+    flex: 3;
+    align-items: flex-ends;
+}
+
+#rightTwoColumnsDiv{
+    flex: 1.75;
+}
+
+#leftTwoColumnsDiv p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    justify-content: space-around;
+}
+
+#leftTwoColumnsDiv ul a{
+    text-decoration: none;
+}
+
+#leftTwoColumnsDiv ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    color: navy;
+    list-style: none;
+    padding-bottom: 12px;
+}
+
+#rightTwoColumnsDiv{
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+#rightTwoColumnsDiv p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+#rightTwoColumnsDiv img{
+    width: 100%;
+    height: 60%;
+}
+
+#leftTwoColumnsDiv p a{
+    color:navy;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/*Main Content*/
+#newReleasesBooks{
+    display: flex;
+    list-style: none;
+}
+
+#newReleasesBooks li{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#newReleasesBooks li img{
+    width: 80%;
+}
+
+#greatFirstReadsBooks{
+    display: flex;
+    list-style: none;
+}
+
+#greatFirstReadsBooks li{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#greatFirstReadsBooks li img{
+    width: 80%;
+}
+
+/*Experiment*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+
+.mySlidesDefault{
+    display: block;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+.mySlides .default {
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*FORMS*/
+#registrationContent{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#loginFormDiv{
+    flex : 2;
+}
+
+#registrationFormDiv{
+    flex : 2;
+}
+
+#registrationForm{
+    width: 100%;
+}
+
+#registrationFieldSet ol{
+    padding-left: 5px;
+    list-style: none;
+}
+
+#registrationFieldSet ol li{
+    padding-bottom: 8px;
+}
+
+#registrationFieldSet ol li label{
+    display: inline-block;
+    text-align: left;
+    width: 120px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+}
+
+#registrationFieldSet ol li input{
+    width: 150px;
+}
+
+#registrationFieldSet ol li select{
+    width: 200px;
+}
+
+#buttonFieldSet ol{
+    list-style: none;
+    padding-left: 5px;
+}
+
+#buttonFieldSet ol li a, h2{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#loginFieldSet ol{
+    list-style: none;
+}
+
+#loginFieldSet ol li{
+    padding-bottom: 8px;
+}
+
+#loginFieldSet ol li label{
+    display: inline-block;
+    text-align: left;
+    width: 120px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+}
+
+#loginFieldSet ol li input{
+    width: 150px;
+}
+
+#buttonLi{
+    vertical-align: center;
+    text-align: center;
+}
+
+#btnRegister, #btnLogin{
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+
+.formCaption{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.formCaption h2{
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #990000;
+}
+
+#resetPassword a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#informationSet h4, p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#informationSet a{
+    color: #990000;
+}
+
+#informationSet p{
+    text-align: justify;
+}
+
+
+/*Help Page*/
+#mainContentHelpPage{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#mainContentTermsPage{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#helpPageContentHeader{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 8px;
+}
+
+#termsPageContentHeader{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 8px;
+}
+
+#helpPageContentHeader fieldset{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#termsPageContentHeader fieldset{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#helpPageContentHeader fieldset h4{
+    font-size: 16px;
+    color: #990000;
+}
+
+#termsPageContentHeader fieldset h4{
+    font-size: 16px;
+    color: #990000;
+}
+
+#helpPageContent{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#termsPageContent{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#navDiv{
+    flex: 1;
+    align-items: flex-start;
+    color: #990000;
+}
+
+#termsDiv{
+    flex: 3;
+}
+
+#helpDiv{
+    flex: 3;
+}
+
+#termsDiv div fieldset h2, h4{
+    font-weight: bolder;
+}
+
+#helpDiv div fieldset h2, h4{
+    font-weight: bolder;
+}
+
+#termsDiv div fieldset p{
+    text-align: justify;
+}
+
+#helpDiv div fieldset p{
+    text-align: justify;
+}
+
+#helpPageNavList ol{
+    padding-left: 2px;
+    list-style: none;
+}
+
+#termsPageNavList ol{
+    padding-left: 2px;
+    list-style: none;
+}
+
+#helpPageNavList legend{
+    font-weight: bolder;
+    padding-bottom: 0px;
+}
+
+#termsPageNavList legend{
+    font-weight: bolder;
+    padding-bottom: 0px;
+}
+
+#helpPageNavList ol li{
+    padding-bottom: 5px;
+}
+
+#termsPageNavList ol li{
+    padding-bottom: 5px;
+}
+
+#helpPageNavList  ol li a{
+    color: #990000;
+}
+
+#termsPageNavList ol li a{
+    color: #990000;
+}
+
+/*Under Construction*/
+.mainContentUnderConstruction{
+    text-align: center;
+}
+
+#mainContentUnderConstruction h1{
+    font-size: 40px;
+}
+
+#workInProgressh1{
+    font-family:'Press Start 2P', cursive;
+    font-size: larger;
+    font-style: italic;
+    text-decoration: underline;
+    color: blue;
+    text-shadow: 2px 2px indigo;
+}
+
+#errorLabel{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+a:link {
+    color: rgb(31, 31, 177);
+}
+
+a:visited {
+    color: rgb(192, 17, 17);
+    text-decoration: none;
+    font-style: italic;
+  }
+  
+a:hover {
+    color: rgb(207, 180, 130);
+}
+
+a:active {
+    color: rgb(2, 73, 2);
+}

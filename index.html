@@ -1,0 +1,160 @@
+<!-------s--------
+
+    Final Project
+    Name: Eduardo Uscuvilca
+    Date: 06-25-2020
+    Description: Final Web Project
+
+----------------->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Black Library Fan Page</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="finalProject.css" />
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <section>
+            <div id="mainContent">
+                <div class="slideshow-container"></div>
+                    <div class="mySlidesDefault">
+                        <img src="./images/finalProject/mephiston_slide_01.webp" style="width:100%" alt ="defaultSlide">
+                    </div>
+
+                    <div class="mySlides  fade">
+                        <img src="./images/finalProject/mephiston_slide_01.webp" style="width:100%" alt = "slide01">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="./images/finalProject/angelsOfDeath_slide_02.webp" style="width:100%" alt = "slide02">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="./images/finalProject/fabius_slide_03.webp" style="width:100%" alt = "slide03">
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <div id="rightSideContent">
+                    <div id="middleRightSideContent01">
+                        <h2>New</h2>
+                        <ul id="newReleasesBooks">
+                            <li>
+                                <img src = "./images/finalProject/warhammer_new_mephiston_02.webp" alt = "bookMephiston01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt = "bookMephiston02">
+                                <a href = "#" >Mephiston: The Revenant Crusade</a>
+                                <h6>$51.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_new_manFlayer.webp" alt = "bookFabius01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt = "bookFabius02">
+                                <a href="#">Fabius Bile: ManFlayer</a>
+                                <h6>$51.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_new_manseMirrors.webp" alt = "bookMirros01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt = "bookMirros02">
+                                <a href="#">The manse of mirrors</a>
+                                <h6>$4.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_new_traitorsHand.webp" alt = "bookTraitors01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt = "bookTraitors02">
+                                <a href="#">Ciaphas Cain: The Traitor's Hand</a>
+                                <h6>$51.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_new_sonsOfSelenar.webp" alt = "bookSelenar01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt = "bookSelenar02">
+                                <a href="#">Sons of the Selenar</a>
+                                <h6>$34.99</h6>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="middleRightSideContent02">
+                        <h2>Great First Reads</h2>
+                        <ul id="greatFirstReadsBooks">
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatRead_Cain01.webp" alt ="bookCain01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookCain02">
+                                <a href="#">Ciaphas Cain: Hero of the Imperium</a>
+                                <h6>$51.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatRead_Einsenhorn.webp" alt ="bookXenos01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookXenos01">
+                                <a href="#">Eisenhorn: Xenos</a>
+                                <h6>$19.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatRead_HorusRaisingf.webp" alt ="bookHorus01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookHorus02>
+                                <a href="#">Horus Rising: Book 1</a>
+                                <h6>$9.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatRead_Kharadrom01.webp" alt ="bookKharadrom01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookKharadrom02">
+                                <a href="#">Warhammer Adventures Flight of the Kharadron</a>
+                                <h6>$11.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatRead_SolarWar.webp" alt ="bookSolar01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookSolar02">
+                                <a href="#">The Solar War: Book 1</a>
+                                <h6>$38.99</h6>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="middleRightSideContent03">
+                        <h2>Great First Listens</h2>
+                        <ul id="greatFirstReadsBooks">
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatListen_crusade.webp" alt ="bookCrusade01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookCrusade02">
+                                <a href="#">Crusade + Other Stories</a>
+                                <h6>$16.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatListen_Ball.webp" alt ="bookBaal01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookBaal02">
+                                <a href="#">The Devastation of Baal</a>
+                                <h6>$19.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatListen_legion.webp" alt ="bookLegion01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookLegion02">
+                                <a href="#">Watchers of the Throne: The Emperor's Legion</a>
+                                <h6>$51.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatListen_soulWars.webp" alt ="bookSolar01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookSOlar02">
+                                <a href="#">Soul Wars</a>
+                                <h6>$11.99</h6>
+                            </li>
+                            <li>
+                                <img src = "./images/finalProject/warhammer_greatListen_darkHarvest.webp" alt ="bookHarvest01">
+                                <img src = "./images/finalProject/warhammer_home_options.png" alt ="bookHarvest02">
+                                <a href="#">Dark Harvest</a>
+                                <h6>$38.99</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer"></footer>
+    </body>
+</html>
